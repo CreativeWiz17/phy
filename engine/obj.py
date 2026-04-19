@@ -29,4 +29,13 @@ class PhysicsObject:
         a = self.force.divide(self.mass)
 
         return a
+    
+    def update (self, dt):
 
+        a = self.acceleration()
+
+        self.velocity = self.velocity.add(a.multiply(dt))
+
+        self.position = self.position.add(self.velocity.multiply(dt)
+                                          )
+        self.force = Vector3()                                    
