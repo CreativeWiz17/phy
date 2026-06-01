@@ -26,6 +26,9 @@ class PhysicsObject:
 
     def acceleration (self):
 
+        if self.mass == 0:
+            return Vector3()
+        
         a = self.force.divide(self.mass)
 
         return a
@@ -36,6 +39,5 @@ class PhysicsObject:
 
         self.velocity = self.velocity.add(a.multiply(dt))
 
-        self.position = self.position.add(self.velocity.multiply(dt)
-                                          )
+        self.position = self.position.add(self.velocity.multiply(dt))
         self.force = Vector3()                                    
