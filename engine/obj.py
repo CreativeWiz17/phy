@@ -1,4 +1,4 @@
-from engine.vector3 import Vector3
+from vector3 import Vector3
 
 class PhysicsObject: 
     def __init__(self, mass = 0, position = None, velocity = None, force = None): 
