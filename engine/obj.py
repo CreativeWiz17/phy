@@ -26,7 +26,7 @@ class PhysicsObject:
 
     def acceleration (self):
 
-        if self.mass == 0:
+        if self.mass <= 0:
             return Vector3()
         
         a = self.force.divide(self.mass)
