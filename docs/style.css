@@ -65,6 +65,11 @@ a:hover
     padding: 8px 0;
     }
 
+iframe 
+    {
+    border-radius: 15px;
+    }   
+
 h2 
     {
     color: #B87333;
