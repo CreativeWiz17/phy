@@ -8,13 +8,20 @@ fetch("https://api.github.com/repos/CreativeWiz17/phy/commits")
 
     commitsDiv.innerHTML = "";
 
-    data.slice(0, 5).forEach(commit => {
+    data.slice(0, 5).forEach(commit => 
+        {
 
-        commitsDiv.innerHTML += `
-            <p>${commit.commit.message}</p>
+        commitsDiv.innerHTML += 
+        `
+            <p>
+                <a href="${commit.html_url}" target="_blank">
+                    ${commit.commit.message}
+                </a>
+            </p>
         `;
 
-    });
+        }
+        );
 
     }
     );
