@@ -10,6 +10,20 @@ body
     padding: 40px;
     }
 
+.header 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header img 
+{
+    width: 60px;
+    border-radius: 35%;
+}
+
 body p:first-of-type 
     {
     text-align: center;
@@ -18,7 +32,7 @@ body p:first-of-type
 h1 
     {
     font-size: 3rem;
-    margin-bottom: 10px;
+    
     text-align: center;
     }
 
@@ -33,6 +47,22 @@ h1
     margin-bottom: 25px;
 
     box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+    }
+a 
+    {
+    color: #F5F1E8;
+    text-decoration: none;
+    }
+
+a:hover 
+    {
+    color: #B87333;
+    }
+
+#commits p
+    {   
+    text-align: left;
+    padding: 8px 0;
     }
 
 h2 
