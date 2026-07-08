@@ -1,5 +1,5 @@
 import pygame
 
-pygame.innit()
+pygame.init()
 
 print(pygame.__version__)

@@ -20,4 +20,3 @@ class World:
 
             obj.update(dt)
 
-      
