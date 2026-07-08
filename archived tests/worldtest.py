@@ -1,6 +1,6 @@
-from vector3 import Vector3
-from obj import PhysicsObject
-from world import World
+from engine.vector3 import Vector3
+from engine.obj import PhysicsObject
+from engine.world import World
 
 world = World()
 
